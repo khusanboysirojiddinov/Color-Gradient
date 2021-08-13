@@ -57,6 +57,10 @@ h1{
     margin-top: 10px;
 }
 
+button:focus{
+    outline: none;
+}
+
 .linear{
     color: #fff;
     margin-top: 20px;
