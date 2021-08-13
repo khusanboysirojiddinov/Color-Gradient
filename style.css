@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css2?family=Righteous&display=swap);
+
+
+@import url(https://fonts.googleapis.com/css2?family=Cambo&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+
+
+
+
+*{
+    font-family: 'Righteous', display;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    height: 80vh;
+}
+
+.random{
+    border: none;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    width: fit-content;
+    padding: 20px 30px;
+    border-radius: 25px;
+    color: rgb(51, 196, 82);
+    font-family: 'Cambo', san-serif;
+    animation: btnAnim 2s ease-in-out infinite alternate;
+}
+
+@keyframes btnAnim {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+
+h1{
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.linear{
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    box-shadow: 3px 2px rgb(0, 0, 0);
+    border-radius: 50px;
+    margin-top: 15px;
+    animation: btnAnim 2s ease-in-out infinite alternate;
+}
+i{
+    padding-left: 5px;
+    color: red;
+    font-size: 22px;
+}
+
+
+.follow{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 0 #e73636;
+    margin-bottom: 10px;
+}
+
+@keyframes footerAnim {
+    from{
+        transform: translateY(0) scale(1);
+    } 
+    to{
+        transform: translateY(-8px) scale(1.06);
+    }
+    
+}
+
+footer{
+    width: fit-content;
+    margin: auto;
+    animation: footerAnim 3000ms ease-in-out infinite alternate;
+    
+}
+
+img,a{
+    width: 20px;
+    margin: 0  10px;
+    transition-duration: 900ms;
+    
+}
+
+a img:hover{
+    transform: translateY(-5px);
+}
+
+.git-hub{
+    box-shadow: 2px 1px #635bda;
+    color: white;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+@media(max-width: 600px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        
+    }
+
+    .linear{
+        font-size: 12px;
+    }
+
+    .random{
+        font-size: 12px;
+        padding: 10px;
+    }
+}
